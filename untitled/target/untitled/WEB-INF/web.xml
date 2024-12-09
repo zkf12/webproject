@@ -1,0 +1,116 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.loginServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.registerServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>GoodsServlet</servlet-name>
+    <servlet-class>com.GoodsServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>purchaseServlet</servlet-name>
+    <servlet-class>com.purchaseServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>addShoppingCartServlet</servlet-name>
+    <servlet-class>com.addShoppingCartServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>shoppingCartServlet</servlet-name>
+    <servlet-class>com.shoppingCartServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>logoutServlet</servlet-name>
+    <servlet-class>com.logoutServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>historyServlet</servlet-name>
+    <servlet-class>com.historyServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>userServlet</servlet-name>
+    <servlet-class>com.userServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>statsServlet</servlet-name>
+    <servlet-class>com.statsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>GoodsServlet</servlet-name>
+    <url-pattern>/GoodsServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>purchaseServlet</servlet-name>
+    <url-pattern>/purchaseServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>addShoppingCartServlet</servlet-name>
+    <url-pattern>/addShoppingCartServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>shoppingCartServlet</servlet-name>
+    <url-pattern>/shoppingCartServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>logoutServlet</servlet-name>
+    <url-pattern>/logoutServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>historyServlet</servlet-name>
+    <url-pattern>/historyServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>userServlet</servlet-name>
+    <url-pattern>/userServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>statsServlet</servlet-name>
+    <url-pattern>/statsServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- 默认页面配置 -->
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+
+  <session-config>
+    <session-timeout>30</session-timeout> <!-- 单位为分钟 -->
+  </session-config>
+
+</web-app>
+
